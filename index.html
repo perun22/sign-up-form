@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sign-up form</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main class="container">
+            <section class="left overlay">
+                <div class="logo">
+                    <img src="odin-lined.png" alt="The Odin Project logo" />
+                    <h1 class="logo-title">ODIN</h1>
+                </div>
+                <div>
+                    <p class="credit">
+                        Photo by
+                        <a
+                            href="https://unsplash.com/@mikafinland?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                            >Mika Ruusunen</a
+                        >
+                        on
+                        <a
+                            href="https://unsplash.com/photos/green-concrete-statue-of-man-faqBB9NFfBA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+                            >Unsplash</a
+                        >
+                    </p>
+                </div>
+            </section>
+            <section class="right">
+                <div class="intro">
+                    <p>
+                        Odin has many names and is the god of both war and death. He is the one-eyed All-Father, who
+                        sacrificed his eye in order to see everything that happens in the world. Sign-up
+                        <span><em>now</em></span> to learn more about this amazing mythological figure.
+                    </p>
+                    <p>
+                        You <span><em>know</em></span> you want to.
+                    </p>
+                </div>
+                <div class="form-section">
+                    <div>
+                        <p>Let's do this!</p>
+                        <form class="form" action="#" method="get">
+                            <div class="column">
+                                <label for="first-name">First Name*</label>
+                                <input type="text" id="first-name" name="first-name" minlength="2" required />
+                                <label for="email">eMail*</label>
+                                <input type="email" id="email" name="email" />
+                                <label for="pwd1">Password*</label>
+                                <input type="password" id="pwd1" name="pwd1" min="12"/>
+                            </div>
+                            <div class="column">
+                                <label for="last-name">Last Name*</label>
+                                <input type="text" id="last-name" name="last-name" minlength="2" required />
+                                <label for="phone-number">Phone number</label>
+                                <input type="tel" id="phone-number" name="phone-number" min="7"/>
+                                <label for="pwd2">Confirm Password*</label>
+                                <input type="password" id="pwd2" name="pwd2" min="12"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>Create Account</button>
+                    <p>
+                        Already have an account?
+                        <a href="#" target="_self">Log in</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
