@@ -1,0 +1,190 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+@font-face {
+    font-family: "Norse-bold";
+    src: url(Norse-bold.otf);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left {
+    background-image: url(Odin-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overlay {
+    border-image: fill 1 radial-gradient(circle, rgba(189, 185, 185, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 200px;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+img {
+    width: 80px;
+}
+
+.logo-title {
+    font-family: "Norse-bold", sans-serif;
+    font-size: 5rem;
+    line-height: 0 !important;
+    color: #fbfcf8;
+    margin-top: 10px;
+}
+.credit {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    background-color: #f3f5f5;
+    box-shadow: 4px 8px #111;
+}
+
+.intro {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /*margin-bottom: 32px;*/
+    margin-left: 48px;
+    margin-right: 104px;
+}
+
+.intro p {
+    margin-bottom: 32px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    background-color: #fdfdfd;
+}
+
+.form-section p {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.form-section > div {
+    margin: 32px 104px 32px 48px;
+}
+
+.form {
+    font-family: sans-serif;
+    display: flex;
+    gap: 48px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-variant: all-petite-caps;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+input {
+    border: 1px solid #d0d4d3;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    min-width: 20vw;
+}
