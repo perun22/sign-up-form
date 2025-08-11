@@ -69,7 +69,9 @@ h6 {
 
 @font-face {
     font-family: "Norse-bold";
-    src: url(Norse-bold.otf);
+    src:
+        local("Norse-bold.otf"),
+        url("Norse-bold.otf") format("opentype");
 }
 
 .container {
