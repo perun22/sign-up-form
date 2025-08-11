@@ -24,6 +24,13 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+    font-family: "Norse-bold";
+    src:
+        local("Norse-bold.otf"),
+        url("Norse-bold.otf") format("opentype");
+}
+
 img,
 picture,
 video,
@@ -68,10 +75,11 @@ h6 {
 }
 
 @font-face {
-    font-family: "Norse-bold";
+    font-family: "Norse-Bold";
     src:
-        local("Norse-bold.otf"),
-        url("Norse-bold.otf") format("opentype");
+        local("Norse-Bold.otf"),
+        url("Norse-Bold.otf") format("opentype");
+    font-weight: bold;
 }
 
 .container {
@@ -108,7 +116,7 @@ img {
 }
 
 .logo-title {
-    font-family: "Norse-bold", sans-serif;
+    font-family: "Norse-Bold", sans-serif;
     font-size: 5rem;
     line-height: 0 !important;
     color: #fbfcf8;
